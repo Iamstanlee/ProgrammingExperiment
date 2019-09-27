@@ -38,12 +38,13 @@ var numbers = {
   900: 'Nine Hundred',
   1000: 'One Thousand',
   1100: 'One Thousand One Hundred',
-  1200: '',
-  1300: '',
-  1400: '',
-  1500: '',
-  1600: '',
-  // TODO 1700 - 1900
+  1200: 'One Thousand Two Hundred',
+  1300: 'One Thousand Three Hundred',
+  1500: 'One Thousand Five Hundred',
+  1600: 'One Thousand Six Hundred',
+  1700: 'One Thousand Seven Hundred',
+  1800: 'One Thousand Eight Hundred',
+  1900: 'One Thousand Nine Hundred',
   2000: 'Two Thousand',
   3000: 'Three Thousand',
   4000: 'Four Thousand',
@@ -52,6 +53,7 @@ var numbers = {
   7000: 'Seven Thousand',
   8000: 'Eight Thousand',
   9000: 'Nine Thousand',
+  //
   10000: 'Ten Thousand',
   11000: 'Eleven Thousand',
   12000: 'Twelve Thousand',
@@ -71,5 +73,13 @@ var numbers = {
   80000: '',
   90000: '',
   100000: 'One Hundred Thousand',
-  1000000: 'Million'
+  200000: '',
+  300000: '',
+  400000: '',
+  500000: '',
+  600000: '',
+  700000: '',
+  800000: '',
+  900000: '',
+  1000000: 'One Million'
 };

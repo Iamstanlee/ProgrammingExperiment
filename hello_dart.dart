@@ -1,22 +1,19 @@
 import 'dart:async';
 
 void main() {
-  ///
-  int getPairElement(List array, int sum) {
-    int temp = 0;
+  int getNumberOfPairElement(List array, int sum) {
+    int count = 0;
     for (int i = 0; i < array.length; i++) {
-      for (int j = i; j < array.length - i; j++) {
-        if (i != j) {
-          if (array[i] + array[j] == sum) {
-            temp++;
-          }
+      for (int j = (i + 1); j < array.length; j++) {
+        if (array[i] + array[j] == sum) {
+          count++;
         }
       }
     }
-    return temp;
+    return count;
   }
 
-  print(getPairElement([4, 5, 3, 4, 3, 4, 2], 8));
+  // print(getNumberOfPairElement([4, 5, 7, 3, 2, 3, 2, 3, 4, 5], 8));
   // List removeDuplicate(List<int> array) {
   //   List<int> temp = [];
   //   for (var i = 0; i < array.length; i++) {
