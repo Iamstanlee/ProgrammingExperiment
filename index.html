@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=1024px, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Document</title>
+      <style>
+         * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+               Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         }
+         body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #f9f9f9;
+         }
+         .container {
+            padding: 20px;
+            border: 1px solid #d8dee2;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 14px;
+         }
+         .label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 600;
+            text-align: left;
+         }
+         .input-block {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            display: block;
+            width: 100%;
+            border: 1px solid #d1d5da;
+            border-radius: 3px;
+            outline: none;
+            box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+            min-height: 34px;
+            padding: 6px 8px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #24292e;
+         }
+         .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            background-color: #28a745;
+            background-image: linear-gradient(-180deg, #34d058, #28a745 90%);
+            -moz-appearance: none;
+            user-select: none;
+            background-repeat: repeat-x;
+            background-position: -1px -1px;
+            background-size: 110% 110%;
+            border: 1px solid rgba(27, 31, 35, 0.2);
+            border-radius: 0.25em;
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            white-space: nowrap;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <label for="email" required="true" class="label">Email address</label>
+         <input type="text" placeholder="" class="input-block" />
+         <label for="password" aria-required="true" class="label">Password</label>
+         <input type="password" placeholder="" class="input-block" />
+         <input
+            type="submit"
+            name="commit"
+            value="Sign in"
+            class="btn"
+            data-disable-with="Signing in…"
+         />
+      </div>
+   </body>
+</html>
